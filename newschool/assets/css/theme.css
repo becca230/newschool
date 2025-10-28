@@ -1,0 +1,43 @@
+/* 🌈 Base Dashboard Themes */
+
+body.theme-admin {
+  background-color: #f8f9fa;
+  --primary-color: #003366;
+  --accent-color: #007bff;
+}
+
+body.theme-teacher {
+  background-color: #f8f9fa;
+  --primary-color: #0d5040;
+  --accent-color: #20c997;
+}
+
+body.theme-parent {
+  background-color: #f8f9fa;
+  --primary-color: #7a3e00;
+  --accent-color: #fd7e14;
+}
+
+body.theme-student {
+  background-color: #f8f9fa;
+  --primary-color: #3c096c;
+  --accent-color: #9d4edd;
+}
+
+/* Apply Theme to Navbar and Cards */
+.navbar {
+  background-color: var(--primary-color) !important;
+}
+
+.card {
+  border-top: 4px solid var(--accent-color);
+}
+
+.btn-theme {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+}
+.btn-theme:hover {
+  opacity: 0.9;
+}

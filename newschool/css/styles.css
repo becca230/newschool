@@ -1,0 +1,301 @@
+/* ==============================
+   GLOBAL BASE STYLES
+============================== */
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background-color: #f8f9fc;
+  color: #333;
+  height: 100vh;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+
+
+/* ==============================
+   NAVBAR
+============================== */
+.navbar {
+  background: #022256;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .navbar-brand {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.navbar .nav-link {
+  color: #e9ecef !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff !important;
+}
+
+/* ==============================
+   LOGIN & REGISTER
+============================== */
+.login-section {
+  min-height: 85vh;
+  background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+}
+
+.card {
+  border-radius: 1rem;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card .form-control {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+.card .btn-primary {
+  border-radius: 0.5rem;
+  font-weight: 500;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.card .btn-primary:hover {
+  background-color: #022256;
+  transform: translateY(-1px);
+}
+
+/* ==============================
+   BUTTONS
+============================== */
+.btn {
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #022256;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #063176;
+}
+
+.btn-success {
+  background-color: #198754;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #157347;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+  color: #000;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #bb2d3b;
+}
+
+/* ==============================
+   ALERTS
+============================== */
+.alert {
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
+}
+
+/* ==============================
+   TABLES
+============================== */
+.table {
+  border-radius: 0.6rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.table thead {
+  background-color: #022256;
+  color: #fff;
+  font-weight: 500;
+}
+
+.table tbody tr:hover {
+  background-color: #f2f6ff;
+  transition: background 0.2s ease;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+/* ==============================
+   SECTION COLOR THEMES
+============================== */
+
+/* 💙 Students Section */
+.section-students h2,
+.section-students .card-header {
+  color: #022256;
+}
+.section-students .table thead {
+  background-color: #022256;
+}
+
+/* 🧡 Teachers Section */
+.section-teachers h2,
+.section-teachers .card-header {
+  color: #fd7e14;
+}
+.section-teachers .table thead {
+  background-color: #fd7e14;
+}
+
+/* 💚 Parents Section */
+.section-parents h2,
+.section-parents .card-header {
+  color: #198754;
+}
+.section-parents .table thead {
+  background-color: #198754;
+}
+
+/* 💜 Assessments Section */
+.section-assessments h2,
+.section-assessments .card-header {
+  color: #6f42c1;
+}
+.section-assessments .table thead {
+  background-color: #6f42c1;
+}
+
+/* ==============================
+   CARDS
+============================== */
+.card {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.card h5, .card h4 {
+  font-weight: 600;
+}
+
+/* ==============================
+   FORMS
+============================== */
+.form-control:focus {
+  border-color: #022256;
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25);
+}
+
+.input-group-text {
+  background-color: #e9ecef;
+  border: none;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+footer {
+  background-color: #022256;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* ==============================
+   TABLE ACTION BUTTONS
+============================== */
+.table .btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  border-radius: 0.4rem;
+}
+
+.table .btn i {
+  vertical-align: middle;
+}
+
+/* ==============================
+   RESPONSIVE ADJUSTMENTS
+============================== */
+@media (max-width: 768px) {
+  .navbar .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .table {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .btn-lg {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* ==============================
+   ANIMATIONS
+============================== */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdown-menu {
+  background-color: #343a40;
+  color: white;
+}
+.dropdown-menu a {
+  color: white;
+}
+.dropdown-menu a:hover {
+  background-color: #495057;
+}
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+  background-color: #022256;
+}
+
+/* Remove number input spinner arrows */
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
