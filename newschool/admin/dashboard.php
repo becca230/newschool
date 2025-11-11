@@ -26,7 +26,16 @@ try {
 }
 
 ?>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+<?php include('../include/navbar.php'); ?>
 <body class="theme-admin">
   <div class="container mt-4">
     <div class="container my-5">
